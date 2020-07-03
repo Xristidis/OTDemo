@@ -12,6 +12,9 @@
     "react-scripts": "2.1.1",
     "redux": "^4.0.1"
   },
+  "engines": {
+    "node": "v12.14.0"
+  },
   "scripts": {
     "start": "node server.js",
     "build": "react-scripts build",
