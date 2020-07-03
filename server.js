@@ -1,5 +1,5 @@
 const express = require('express');
-
+const port = process.env.PORT || 3000;
 const app = express();
 const path = require('path');
 
@@ -81,6 +81,6 @@ app.get('/api', (req, res) => {
     )
 })
 
-app.listen(3000, () => {
-    console.log("port 3000 working!")
-})
+app.listen(port, () => {
+    console.log(`Server is up on port ${port}!`);
+});
