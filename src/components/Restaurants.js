@@ -40,7 +40,7 @@ class Restaurants extends React.Component {
   async getRestaurantsDefault() {
     try {
       const restaurants = await axios.get(
-        `http://opentable.herokuapp.com/api/restaurants?city=toronto`
+        `https://opentable.herokuapp.com/api/restaurants?city=toronto`
       );
       // console.log(restaurants.data.restaurants)
       this.setState({
@@ -54,23 +54,23 @@ class Restaurants extends React.Component {
 
   componentDidUpdate(prevProps) {
     this.props.citySelected !== prevProps.citySelected &&
-    axios
-      .get(
-        `http://opentable.herokuapp.com/api/restaurants?city=${
+      axios
+        .get(
+          `http://opentable.herokuapp.com/api/restaurants?city=${
           this.props.citySelected
-        }`
-      )
-      .then(res => {
-        restaurants = res.data.restaurants;
-        this.setState({
-          restaurants,
-          loaded: true,
-          loading: false
+          }`
+        )
+        .then(res => {
+          restaurants = res.data.restaurants;
+          this.setState({
+            restaurants,
+            loaded: true,
+            loading: false
+          });
+        })
+        .catch(err => {
+          console.log({ err });
         });
-      })
-      .catch(err => {
-        console.log({ err });
-      });
   }
 
   render() {
