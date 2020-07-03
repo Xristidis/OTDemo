@@ -21,7 +21,7 @@ class City extends React.Component {
       loading: true
     });
     try {
-      cities = await axios.get("http://opentable.herokuapp.com/api/cities");
+      cities = await axios.get("https://opentable.herokuapp.com/api/cities");
       this.setState({
         ...this.state,
         cities: cities.data.cities,
