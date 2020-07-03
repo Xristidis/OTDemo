@@ -1,17 +1,23 @@
-# Open_Table_Api [React Redux App] 
+***Open Table Demo***
 
 This is a full-stack app designed to consume the open-table API.
 
-[Live Link](http://178.128.231.249)
+To see this live, go to https://opentabledemo.herokuapp.com/
 
-I am using **React, Redux**, axios and AntDesign (for React Design Framework) on the front end and **Express** on the backend.
+I am using React, Redux, Axios, and AntDesign (for React Design Framework) on the front-end and Express in the back-end.
 
-To run this app:
+To run the app:
 
-* `git clone` - Clone this repo***** add REPO
-* `cd into_directory` - Access Root Directory
-* `npm install` - Install All Dependencies
-* `npm start` - Launch Application Locally   
+You must have NodeJS installed locally.
 
-*Make Sure You Have nodeJs Installed Locally*
+in the command line type -
+
+- "git clone"                         - Clone this repo.
+- "cd (insert directory nanme here)"  - Access Root Directory.
+- "npm install"                       - Install dependencies.
+- "node server.js"                    - Launch app locally. 
+
+Go to http://localhost:3000/ to see app in your default browser.
+
+
 
