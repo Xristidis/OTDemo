@@ -56,7 +56,7 @@ class Restaurants extends React.Component {
     this.props.citySelected !== prevProps.citySelected &&
       axios
         .get(
-          `http://opentable.herokuapp.com/api/restaurants?city=${
+          `https://opentable.herokuapp.com/api/restaurants?city=${
           this.props.citySelected
           }`
         )
